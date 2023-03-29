@@ -1,0 +1,17 @@
+.imagenFondo {
+    width: 50%;
+    height: 100%;
+
+    background-image: url(../imgs/imagen-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.glass {
+    height: 100%;
+    width: 100%;
+    background: rgba(25, 25, 25, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

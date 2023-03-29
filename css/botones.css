@@ -1,0 +1,22 @@
+.mi-btn {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    min-width: 80px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(30, 30, 30);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: normal;
+    transition: all 250ms;
+    border: none;
+    border-radius: 3px;
+    padding: .5em;
+}
+
+.mi-btn:hover {
+    background-color: cornflowerblue;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
