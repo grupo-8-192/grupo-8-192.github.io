@@ -1,46 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>
-        Grupo 8
-    </title>
+    <title>Instituto de Nutricion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
 </head>
 
 <body>
 
     <header>
-        <h1 class="titulo">Calculadora IMC</h1>
+        <div class="titulo">
+        <h1>
+            Instituto de Nutricion
+        </h1>
+    </div>
+        <nav>
+            <a href=""> Quienes somos<i class="bi bi-caret-down-fill"></i></a>
+            <a href="">Planes <i class="bi bi-caret-down-fill"></i></a>
+            <a href="">Servicios <i class="bi bi-caret-down-fill"></i></a>
+            <a href="">Sucursales <i class="bi bi-caret-down-fill"></i></a>
+            <a href="" class="caja1">Ingresar</a>
+            <a href="./pages/form.html" class="caja1">Registrarme</a>
+        </nav>
+
     </header>
 
-    <main style="display: flex; align-items: center;">
-        <form class="formulario" action="#" method="POST">
-            <div>
-                <label for="peso">Peso</label>
-                <input type="text" min="0" max="1000" placeholder="Introduce tu peso en kg" name="peso" id="peso">
-            </div>
-            <div>
-                <label for="altura">Altura</label>
-                <input type="text" min="0" max="1000" placeholder="Introduce tu altura en cm" name="altura" id="altura">
-            </div>
-            <div>
-                <button class="mi-btn" type="reset">Restaurar valores</button>
-            </div>
-            <div>
-                <button class="mi-btn" type="submit">Calcular IMC</button>
-            </div>
-        </form>
+    <main>
+
+        <div class="texto">
+            <p> 
+             La alimentacion tiene un papel fundamental en nuestra saluda lo largo de toda la vida. <br>
+             Tener malos habitos alimentarios se asocia a diferentes enfermedades como la obecidad,la diebetes,enfermedades cardiovasculares,cancer, etc. <br> Por lo tanto la elecccion y convinacion adecuada de alimentos,mejorara nuestra salud y nos ayudara a encontrarnos mejor y con mas calidad de vida.
+            
+            </p>
+        </div>
+        <div class="caja">
+              <h2 >Calcular tu IMC</h2>
+              <a href="http://127.0.0.1:5500/grupo-8-192.github.io/calculadora.html">Click Aqui</a>
+        </div>
+        <nav id="mi-imagen">
+          <img src="./imgs/pagina-principal.jpg" alt="Imagen de recepcion hospital" width="100%">
+        </nav> 
+        
     </main>
 
     <footer>
-        Grupo 8
+
+        <div class="contenedor1">
+            <h3>Siguenos en</h3>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-twitter"></i></a>   
+        </div>
+        <div class="texto1">
+            <p>Todos los Derechos Reservados &copy; Grupo 8</p>
+        </div>     
+        
     </footer>
-
+    <script src="./js/script.js"></script>
 </body>
-
 </html>
