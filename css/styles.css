@@ -1,54 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('fuentes.css');
+@import url('generales.css');
+@import url('body.css');
+@import url('encabezado.css');
+@import url('pie.css');
 @import url('formulario.css');
-@import url('botones.css');
 @import url('titulo.css');
-@import url('imagenFondo.css');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: rgb(235, 235, 235);
-    color: rgb(30, 30, 30);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-header {
-    height: 10vh;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: normal;
-    color: rgb(30, 30, 30);
-    background-color: crimson;
-    border-bottom: 1px solid rgb(200, 200, 200);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-main {
-    height: 90vh;
-
-}
-
-
-footer {
-    height: 5vh;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: normal;
-    color: rgb(30, 30, 30);
-    background-color: rgb(210, 210, 210);
-    border-top: 1px solid rgb(200, 200, 200);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+@import url('botones.css');
+@import url('visor.css');

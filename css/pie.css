@@ -1,0 +1,36 @@
+.pie {
+    background-color: rgb(116, 70, 132);
+}
+
+.lista-redes-sociales {
+    list-style: none;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.redes-item {
+    padding: .3em;
+}
+
+.redes-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.redes-link:hover {
+    transition: 500ms;
+    cursor: pointer;
+    color: palevioletred;
+}
+
+@media only screen and (min-width: 768px) {
+    .lista-redes-sociales {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: end;
+        gap: 30px;
+    }
+}

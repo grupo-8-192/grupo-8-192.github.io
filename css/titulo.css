@@ -1,6 +1,5 @@
-.titulo {
+.titulo,
+.sub-titulo {
     text-align: center;
-    color: rgb(30, 30, 30);
-    margin-top: .5em;
-    margin-bottom: .5em;
+    margin: 25px;
 }

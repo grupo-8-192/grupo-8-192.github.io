@@ -1,20 +1,11 @@
 .formulario {
     width: 360px;
-
-    margin-left: auto;
-    margin-right: auto;
-
-    padding: 1em;
-
+    margin: 0px auto;
+    padding: 15px;
     color: rgb(30, 30, 30);
     background-color: rgb(225, 225, 225);
-
     border: 1px solid rgb(175, 175, 175);
     border-radius: 3px;
-}
-
-.formulario div {
-    margin-bottom: 1.5em;
 }
 
 .formulario label {
@@ -25,7 +16,7 @@
 
 .formulario input {
     width: 100%;
-    padding: 1em;
+    padding: .6em;
     font-size: 1rem;
     font-weight: 300;
     background-color: rgb(255, 255, 255);

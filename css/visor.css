@@ -1,0 +1,18 @@
+.visor {
+    width: 360px;
+    height: 210px;
+    margin: 30px auto;
+    background-color: black;
+    color: chartreuse;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.resultadoIMC {
+    font-weight: 900;
+    font-size: 36px;
+}

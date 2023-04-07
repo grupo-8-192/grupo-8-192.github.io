@@ -1,0 +1,13 @@
+Grupo 8 Comisión 192
+UTN-AP
+
+Integrantes
+Valeria García
+Verónica López
+Ignacio Sosa
+
+Repo de Git
+https://github.com/grupo-8-192/grupo-8-192.github.io
+
+Git Pages
+https://grupo-8-192.github.io/

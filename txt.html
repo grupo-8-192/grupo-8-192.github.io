@@ -13,9 +13,7 @@
     <!-- estilos -->
     <link rel="stylesheet" href="./css/styles.css">
 
-    <title>
-        Instituto de Nutricion
-    </title>
+    <title>Instituto de Nutricion</title>
 </head>
 
 <body>
@@ -59,40 +57,40 @@
 
     <main class="principal">
 
-        <h1 class="titulo">
+        <h1 style="text-align: center; margin: 20px auto;">
             Instituto de Nutrición
         </h1>
-        <h2 class="sub-titulo">
-            Calcular tu IMC
-        </h2>
+
+        <div>
+            <h2 style="text-align: center;">Calcular tu IMC</h2>
+            <a href="http://127.0.0.1:5500/grupo-8-192.github.io/calculadora.html">Click Aqui</a>
+        </div>
+
+        <div class="texto">
+            <p>
+                La alimentación tiene un papel fundamental en nuestra salud a lo largo de toda la vida. Tener malos
+                hábitos alimentarios se asocia a diferentes enfermedades como la obecidad, la diebetes,enfermedades
+                cardiovasculares, etc. Por lo tanto la eleccción adecuada de los alimentos mejorara nuestra salud y
+                calidad de vida.
+            </p>
+        </div>
 
         <form class="formulario" action="#" method="POST">
             <div>
                 <label for="peso">Peso</label>
-                <input type="text" placeholder="Introduce tu peso en kg" name="peso" id="peso">
+                <input type="text" min="0" max="1000" placeholder="Introduce tu peso en kg" name="peso" id="peso">
             </div>
             <div>
                 <label for="altura">Altura</label>
-                <input type="text" placeholder="Introduce tu altura en cm" name="altura" id="altura">
+                <input type="text" min="0" max="1000" placeholder="Introduce tu altura en cm" name="altura" id="altura">
             </div>
-
             <div>
-                <button class="mi-btn" type="button" onclick="calcular();">Calcular</button>
+                <button class="mi-btn" type="reset">Restaurar valores</button>
             </div>
-
-
             <div>
-                <button class="mi-btn" type="reset">Restaurar</button>
+                <button class="mi-btn" type="submit">Calcular IMC</button>
             </div>
-
         </form>
-
-        <div class="visor">
-            <p class="mensaje" id="mensaje">
-            <p class="resultado" id="resultado">
-                Observa aquí los resultados
-            </p>
-        </div>
 
     </main>
 
@@ -144,8 +142,6 @@
         </nav>
 
     </footer>
-
-    <script src="./js/script.js"></script>
 
 </body>
 
