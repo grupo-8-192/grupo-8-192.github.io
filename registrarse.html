@@ -64,39 +64,47 @@
     <main class="principal">
 
         <h1 class="titulo">
-            Instituto de Nutrición
+            Registrarse
         </h1>
-        <h2 class="sub-titulo">
-            Calcular tu IMC
-        </h2>
 
         <form class="formulario" action="#" method="POST">
+
             <div>
-                <label for="peso">Peso</label>
-                <input type="text" placeholder="Introduce tu peso en kg" name="peso" id="peso">
-            </div>
-            <div>
-                <label for="altura">Altura</label>
-                <input type="text" placeholder="Introduce tu altura en cm" name="altura" id="altura">
+                <label for="nombre">Nombre</label>
+                <input type="text">
             </div>
 
             <div>
-                <button class="mi-btn" type="button" onclick="calcular();">Calcular</button>
+                <label for="apellido">Apellido</label>
+                <input type="text">
             </div>
-
 
             <div>
-                <button class="mi-btn" type="reset">Restaurar</button>
+                <label for="email">email</label>
+                <input type="email">
             </div>
 
+            <div>
+                <label for="tel">teléfono</label>
+                <input type="tel">
+            </div>
+
+            <label for="region">Región</label>
+            <select id="region" name="region">
+                <option value="">África</option>
+                <option value="">América</option>
+                <option value="">Asia</option>
+                <option value="">Europa</option>
+                <option value="">Oceania</option>
+            </select>
+
+            <label for="region">País</label>
+            <select id="region" name="region">
+                <option value="">Argentina</option>
+                <option value="">España</option>
+                <option value="">Italia</option>
+            </select>
         </form>
-
-        <div class="visor">
-            <p class="mensaje" id="mensaje">
-            <p class="resultado" id="resultado">
-                Observa aquí los resultados
-            </p>
-        </div>
 
     </main>
 

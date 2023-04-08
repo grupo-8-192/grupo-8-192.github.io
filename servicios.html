@@ -13,7 +13,9 @@
     <!-- estilos -->
     <link rel="stylesheet" href="./css/styles.css">
 
-    <title>Instituto de Nutricion</title>
+    <title>
+        Instituto de Nutricion
+    </title>
 </head>
 
 <body>
@@ -21,7 +23,9 @@
     <header class="encabezado">
 
         <div class="logo">
-            <p class="logo-txt">Logo</p>
+            <li class="menu-item">
+                <a class="menu-link logo-txt" href="./index.html">Logo</a>
+            </li>
         </div>
 
         <nav>
@@ -29,27 +33,29 @@
 
                 <!-- icono -->
                 <li class="menu-item">
-                    <a class="menu-link" href="#">
+                    <a class="menu-link" href="./servicios.html">
                         <i class="bi bi-heart-pulse-fill"></i> Servicios
                     </a>
                 </li>
 
                 <!-- icono -->
                 <li class="menu-item">
-                    <a class="menu-link" href="#">
+                    <a class="menu-link" href="./planes.html">
                         <i class="bi bi-clipboard-fill"></i> Planes
                     </a>
                 </li>
 
                 <li class="menu-item">
-                    <a class="menu-link" href="#">
+                    <a class="menu-link" href="./contacto.html">
                         <i class="bi bi-headset"></i> Contacto
                     </a>
                 </li>
 
                 <!-- icono -->
                 <li class="menu-item">
-                    <a class="menu-link" href="./ingresar.html"><i class="bi bi-person-circle"></i> Ingresar</a>
+                    <a class="menu-link" href="./registrarse.html">
+                        <i class="bi bi-person-circle"></i> Registrarse
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -57,40 +63,9 @@
 
     <main class="principal">
 
-        <h1 style="text-align: center; margin: 20px auto;">
-            Instituto de Nutrición
+        <h1 class="titulo">
+            Servicios
         </h1>
-
-        <div>
-            <h2 style="text-align: center;">Calcular tu IMC</h2>
-            <a href="http://127.0.0.1:5500/grupo-8-192.github.io/calculadora.html">Click Aqui</a>
-        </div>
-
-        <div class="texto">
-            <p>
-                La alimentación tiene un papel fundamental en nuestra salud a lo largo de toda la vida. Tener malos
-                hábitos alimentarios se asocia a diferentes enfermedades como la obecidad, la diebetes,enfermedades
-                cardiovasculares, etc. Por lo tanto la eleccción adecuada de los alimentos mejorara nuestra salud y
-                calidad de vida.
-            </p>
-        </div>
-
-        <form class="formulario" action="#" method="POST">
-            <div>
-                <label for="peso">Peso</label>
-                <input type="text" min="0" max="1000" placeholder="Introduce tu peso en kg" name="peso" id="peso">
-            </div>
-            <div>
-                <label for="altura">Altura</label>
-                <input type="text" min="0" max="1000" placeholder="Introduce tu altura en cm" name="altura" id="altura">
-            </div>
-            <div>
-                <button class="mi-btn" type="reset">Restaurar valores</button>
-            </div>
-            <div>
-                <button class="mi-btn" type="submit">Calcular IMC</button>
-            </div>
-        </form>
 
     </main>
 
@@ -142,6 +117,8 @@
         </nav>
 
     </footer>
+
+    <script src="./js/script.js"></script>
 
 </body>
 

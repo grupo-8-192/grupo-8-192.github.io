@@ -1,4 +1,6 @@
+
 function calcular() {
+
     let peso = parseFloat(document.getElementById("peso").value);
     let altura = (parseFloat(document.getElementById("altura").value) / 100);
     let imc = parseFloat((peso / (altura * altura)));
