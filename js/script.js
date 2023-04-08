@@ -2,11 +2,12 @@ function calcular() {
     let peso = parseFloat(document.getElementById("peso").value);
     let altura = (parseFloat(document.getElementById("altura").value) / 100);
     let imc = parseFloat((peso / (altura * altura)));
+
     if (peso < 0 || altura < 0) {
-        document.getElementById("mensaje").innerHTML = "algo mal 1";
+        document.getElementById("mensaje").innerHTML = "Por favor, revisá que los valores <br> de peso y altura sean correctos";
         document.getElementById("resultado").innerHTML = "";
     } else if (peso > 250 || altura > 2.5) {
-        document.getElementById("mensaje").innerHTML = "algo mal 2";
+        document.getElementById("mensaje").innerHTML = "Por favor, revisá que los valores <br> de peso y altura sean correctos";
         document.getElementById("resultado").innerHTML = "";
     } else {
         if (isNaN(imc)) {
@@ -17,7 +18,7 @@ function calcular() {
                 document.getElementById("mensaje").innerHTML = "Por favor, completa los campos <br> correctamente.";
                 document.getElementById("resultado").innerHTML = "";
             } else if (imc > 0 && imc <= 16) {
-                document.getElementById("mensaje").innerHTML = "Delgadez severa";
+                document.getElementById("mensaje").innerHTML = "Por favor, revisá que los valores <br> de peso y altura sean correctos. <br> Los valores ingresados corresponden al rango de delgadez severa";
                 document.getElementById("resultado").innerHTML = "Su IMC es" + " " + imc.toFixed(2);
             } else if (imc > 16 && imc <= 17) {
                 document.getElementById("mensaje").innerHTML = "Delgadez moderada";
@@ -47,7 +48,7 @@ function calcular() {
                 document.getElementById("mensaje").innerHTML = "Hiperobesidad";
                 document.getElementById("resultado").innerHTML = "Su IMC es" + " " + imc.toFixed(2);
             } else if (imc > 70) {
-                document.getElementById("mensaje").innerHTML = "Los números son muy elevados. Por favor, revisa los datos cargados";
+                document.getElementById("mensaje").innerHTML = "Los resultados obtenidos son muy elevados. Por favor, revisa que los datos cargados sean correctos";
                 document.getElementById("resultado").innerHTML = "Su IMC es" + " " + imc.toFixed(2);
             }
         } else {
