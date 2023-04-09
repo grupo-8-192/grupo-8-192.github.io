@@ -69,43 +69,50 @@
 
         <form class="formulario" action="#" method="POST">
 
+            <!-- nombre -->
             <div>
                 <label for="nombre">Nombre</label>
-                <input type="text">
+                <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre">
             </div>
 
+            <!-- apellido -->
             <div>
                 <label for="apellido">Apellido</label>
-                <input type="text">
+                <input type="text" name="apellido" id="apellido" placeholder="Introduce tu apellido">
             </div>
 
+            <!-- email -->
             <div>
                 <label for="email">email</label>
-                <input type="email">
+                <input type="email" name="email" id="email" placeholder="Introduce tu email">
+            </div>
+
+            <!-- provincia -->
+            <div>
+                <label for="Provincia">
+                    Provincia
+                </label>
+
+                <select value="Provincia" id="Provincia" name="Provincia">
+                    <option value="Elige una provincia">Elige una provincia</option>
+                </select>
             </div>
 
             <div>
-                <label for="tel">teléfono</label>
-                <input type="tel">
+                <button class="mi-btn" type="button" onclick="registrarse();">Registrarse</button>
             </div>
 
-            <label for="region">Región</label>
-            <select id="region" name="region">
-                <option value="">África</option>
-                <option value="">América</option>
-                <option value="">Asia</option>
-                <option value="">Europa</option>
-                <option value="">Oceania</option>
-            </select>
-
-            <label for="region">País</label>
-            <select id="region" name="region">
-                <option value="">Argentina</option>
-                <option value="">España</option>
-                <option value="">Italia</option>
-            </select>
+            <div>
+                <button class="mi-btn" type="reset">Restaurar</button>
+            </div>
         </form>
 
+        <div>
+            <p style="text-align: center; font-size: 18px; font-weight: bold; margin-bottom: 20px;" name="nuevo-usuario"
+                id="nuevo-usuario">
+
+            </p>
+        </div>
     </main>
 
     <footer class="pie">
@@ -157,7 +164,10 @@
 
     </footer>
 
+    <!-- js -->
     <script src="./js/script.js"></script>
+    <script src="./js/geodef.js"></script>
+    <script src="./js/usuario-registrado.js"></script>
 
 </body>
 

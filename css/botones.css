@@ -6,7 +6,7 @@
     min-width: 80px;
     text-align: center;
     text-decoration: none;
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(116, 70, 132);
     color: rgb(255, 255, 255);
     font-size: 1rem;
     font-weight: normal;
@@ -14,10 +14,13 @@
     border: none;
     border-radius: 3px;
     padding: .5em;
+    text-transform: uppercase;
+    font-weight: bold;
+
 }
 
 .mi-btn:hover {
-    background-color: cornflowerblue;
+    background-color: palevioletred;
     color: rgb(255, 255, 255);
     cursor: pointer;
 }

@@ -5,56 +5,46 @@ function calcular() {
     let altura = (parseFloat(document.getElementById("altura").value) / 100);
     let imc = parseFloat((peso / (altura * altura)));
 
-    if (peso < 0 || altura < 0) {
-        document.getElementById("mensaje").innerHTML = "Por favor, revisá que los valores <br> de peso y altura sean correctos";
+    if (isNaN(imc)) {
+        document.getElementById("mensaje").innerHTML = "(1) No es un numero. <br> Por favor, revisá los valores <br> de peso y altura.";
+        document.getElementById("resultado").innerHTML = "";
+    } else if (peso < 0 || altura < 0) {
+        document.getElementById("mensaje").innerHTML = "(2) Por debajo del rango. <br> Por favor, revisá los valores <br> de peso y altura.";
         document.getElementById("resultado").innerHTML = "";
     } else if (peso > 250 || altura > 2.5) {
-        document.getElementById("mensaje").innerHTML = "Por favor, revisá que los valores <br> de peso y altura sean correctos";
+        document.getElementById("mensaje").innerHTML = "(3) Por encima del rango. <br> Por favor, revisá los valores <br> de peso y altura.";
         document.getElementById("resultado").innerHTML = "";
-    } else {
-        if (isNaN(imc)) {
-            document.getElementById("mensaje").innerHTML = "Por favor, completa los campos <br> correctamente.";
+    } else if (typeof (imc) == "number" || typeof (imc) == "Number") {
+        if (imc < 0) {
+            document.getElementById("mensaje").innerHTML = "Los resultados obtenidos <br> son algo extraños. <br> Por favor, revisa que sean correctos.";
             document.getElementById("resultado").innerHTML = "";
-        } else if (typeof (imc) == "number" || typeof (imc) == "Number") {
-            if (imc < 0) {
-                document.getElementById("mensaje").innerHTML = "Por favor, completa los campos <br> correctamente.";
-                document.getElementById("resultado").innerHTML = "";
-            } else if (imc > 0 && imc <= 16) {
-                document.getElementById("mensaje").innerHTML = "Por favor, revisá que los valores <br> de peso y altura sean correctos. <br> Los valores ingresados corresponden al rango de delgadez severa";
-                document.getElementById("resultado").innerHTML = "Su IMC es" + " " + imc.toFixed(2);
-            } else if (imc > 16 && imc <= 17) {
-                document.getElementById("mensaje").innerHTML = "Delgadez moderada";
-                document.getElementById("resultado").innerHTML = "Su IMC es" + " " + imc.toFixed(2);
-            } else if (imc > 17 && imc <= 18.5) {
-                document.getElementById("mensaje").innerHTML = "Delgadez leve";
-                document.getElementById("resultado").innerHTML = "Su IMC es" + " " + imc.toFixed(2);
-            } else if (imc > 18.5 && imc <= 25) {
-                document.getElementById("mensaje").innerHTML = "Peso normal";
-                document.getElementById("resultado").innerHTML = "Su IMC es" + " " + imc.toFixed(2);
-            } else if (imc > 25 && imc <= 26) {
-                document.getElementById("mensaje").innerHTML = "Sobrepeso";
-                document.getElementById("resultado").innerHTML = "Su IMC es" + " " + imc.toFixed(2);
-            } else if (imc > 25 && imc <= 29.5) {
-                document.getElementById("mensaje").innerHTML = "Preobesidad";
-                document.getElementById("resultado").innerHTML = "Su IMC es" + " " + imc.toFixed(2);
-            } else if (imc > 29.5 && imc <= 31.5) {
-                document.getElementById("mensaje").innerHTML = "Obesidad";
-                document.getElementById("resultado").innerHTML = "Su IMC es" + " " + imc.toFixed(2);
-            } else if (imc > 31.5 && imc <= 35) {
-                document.getElementById("mensaje").innerHTML = "Obesidad leve";
-                document.getElementById("resultado").innerHTML = "Su IMC es" + " " + imc.toFixed(2);
-            } else if (imc > 35 && imc <= 40) {
-                document.getElementById("mensaje").innerHTML = "Obesidad moderada";
-                document.getElementById("resultado").innerHTML = "Su IMC es" + " " + imc.toFixed(2);
-            } else if (imc > 40 && imc <= 70) {
-                document.getElementById("mensaje").innerHTML = "Hiperobesidad";
-                document.getElementById("resultado").innerHTML = "Su IMC es" + " " + imc.toFixed(2);
-            } else if (imc > 70) {
-                document.getElementById("mensaje").innerHTML = "Los resultados obtenidos son muy elevados. Por favor, revisa que los datos cargados sean correctos";
-                document.getElementById("resultado").innerHTML = "Su IMC es" + " " + imc.toFixed(2);
-            }
+        } else if (imc > 0 && imc <= 15) {
+            document.getElementById("mensaje").innerHTML = "Los resultados obtenidos <br> son algo extraños. <br> Por favor, revisa que sean correctos.";
+            document.getElementById("resultado").innerHTML = "";
+        } else if (imc > 15 && imc <= 18.5) {
+            document.getElementById("mensaje").innerHTML = "Ustede se encuentra <br> en el rango de delgadez.";
+            document.getElementById("resultado").innerHTML = "Su IMC es" + " " + imc.toFixed(2);
+        } else if (imc > 18.5 && imc <= 25) {
+            document.getElementById("mensaje").innerHTML = "Ustede se encuentra <br> en el rango de peso normal.";
+            document.getElementById("resultado").innerHTML = "Su IMC es" + " " + imc.toFixed(2);
+        } else if (imc > 25 && imc <= 26) {
+            document.getElementById("mensaje").innerHTML = "Ustede se encuentra <br> en el rango de sobrepeso.";
+            document.getElementById("resultado").innerHTML = "Su IMC es" + " " + imc.toFixed(2);
+        } else if (imc > 25 && imc <= 31.5) {
+            document.getElementById("mensaje").innerHTML = "Ustede se encuentra <br> en el rango de preobesidad.";
+            document.getElementById("resultado").innerHTML = "Su IMC es" + " " + imc.toFixed(2);
+        } else if (imc > 31.5 && imc <= 40) {
+            document.getElementById("mensaje").innerHTML = "Ustede se encuentra <br> en el rango de obesidad.";
+            document.getElementById("resultado").innerHTML = "Su IMC es" + " " + imc.toFixed(2);
+        } else if (imc > 40 && imc <= 65) {
+            document.getElementById("mensaje").innerHTML = "Ustede se encuentra <br> en el rango de hiperobesidad.";
+            document.getElementById("resultado").innerHTML = "Su IMC es" + " " + imc.toFixed(2);
         } else {
-            alert("No sabemos que paso <br> ¡Comunícate con el grupo 8!")
+            document.getElementById("mensaje").innerHTML = "Los resultados obtenidos son muy elevados. <br> Por favor, revisa que sean correctos";
+            document.getElementById("resultado").innerHTML = "";
         }
+    } else {
+        document.getElementById("mensaje").innerHTML = "Sinceramente, no sabemos que pasó <br> ¡Comunícate con el grupo 8!";
+        document.getElementById("resultado").innerHTML = "";
     }
 }

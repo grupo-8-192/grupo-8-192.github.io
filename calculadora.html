@@ -64,24 +64,38 @@
     <main class="principal">
 
         <h1 class="titulo">
-            Calculá tu IMC
+            Instituto de Nutrición
         </h1>
+        <h2 class="sub-titulo">
+            Calculadora IMC
+        </h2>
 
-        <div>
-            <a class="mi-btn" href="./calculadora.html">
-                Calculá tu imc
-            </a>
-        </div>
-
-        <div class="fondo">
-            <div class="vidrio">
-                <p class="leyenda">
-                    La alimentación tiene un papel fundamental en nuestra salud a lo largo de toda la vida. Tener malos
-                    hábitos alimentarios se asocia a diferentes enfermedades como la obecidad, la diebetes,enfermedades
-                    cardiovasculares, etc. Por lo tanto la eleccción adecuada de los alimentos mejorara nuestra salud y
-                    calidad de vida.
-                </p>
+        <form class="formulario" action="#" method="POST">
+            <div>
+                <label for="peso">Peso</label>
+                <input type="text" placeholder="Introduce tu peso en kg" name="peso" id="peso">
             </div>
+            <div>
+                <label for="altura">Altura</label>
+                <input type="text" placeholder="Introduce tu altura en cm" name="altura" id="altura">
+            </div>
+
+            <div>
+                <button class="mi-btn" type="button" onclick="calcular();">Calcular</button>
+            </div>
+
+
+            <div>
+                <button class="mi-btn" type="reset">Restaurar</button>
+            </div>
+
+        </form>
+
+        <div class="visor">
+            <p class="mensaje" id="mensaje">
+            <p class="resultado" id="resultado">
+                Observa aquí los resultados
+            </p>
         </div>
 
     </main>
