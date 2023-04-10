@@ -6,20 +6,20 @@ function calcular() {
     let imc = parseFloat((peso / (altura * altura)));
 
     if (isNaN(imc)) {
-        document.getElementById("mensaje").innerHTML = "(1) No es un numero. <br> Por favor, revisá los valores <br> de peso y altura.";
+        document.getElementById("mensaje").innerHTML = "Por favor, revisa los valores ingresados";
         document.getElementById("resultado").innerHTML = "";
     } else if (peso < 0 || altura < 0) {
-        document.getElementById("mensaje").innerHTML = "(2) Por debajo del rango. <br> Por favor, revisá los valores <br> de peso y altura.";
+        document.getElementById("mensaje").innerHTML = "Por favor, revisa los valores ingresados";
         document.getElementById("resultado").innerHTML = "";
     } else if (peso > 250 || altura > 2.5) {
-        document.getElementById("mensaje").innerHTML = "(3) Por encima del rango. <br> Por favor, revisá los valores <br> de peso y altura.";
+        document.getElementById("mensaje").innerHTML = "Por favor, revisa los valores ingresados";
         document.getElementById("resultado").innerHTML = "";
     } else if (typeof (imc) == "number" || typeof (imc) == "Number") {
         if (imc < 0) {
-            document.getElementById("mensaje").innerHTML = "Los resultados obtenidos <br> son algo extraños. <br> Por favor, revisa que sean correctos.";
+            document.getElementById("mensaje").innerHTML = "Por favor, revisa los valores ingresados";
             document.getElementById("resultado").innerHTML = "";
         } else if (imc > 0 && imc <= 15) {
-            document.getElementById("mensaje").innerHTML = "Los resultados obtenidos <br> son algo extraños. <br> Por favor, revisa que sean correctos.";
+            document.getElementById("mensaje").innerHTML = "Por favor, revisa los valores ingresados";
             document.getElementById("resultado").innerHTML = "";
         } else if (imc > 15 && imc <= 18.5) {
             document.getElementById("mensaje").innerHTML = "Ustede se encuentra <br> en el rango de delgadez.";
@@ -40,7 +40,7 @@ function calcular() {
             document.getElementById("mensaje").innerHTML = "Ustede se encuentra <br> en el rango de hiperobesidad.";
             document.getElementById("resultado").innerHTML = "Su IMC es" + " " + imc.toFixed(2);
         } else {
-            document.getElementById("mensaje").innerHTML = "Los resultados obtenidos son muy elevados. <br> Por favor, revisa que sean correctos";
+            document.getElementById("mensaje").innerHTML = "Por favor, revisa los valores ingresados";
             document.getElementById("resultado").innerHTML = "";
         }
     } else {
