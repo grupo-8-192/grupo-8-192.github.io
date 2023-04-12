@@ -5,7 +5,6 @@
 
 **Descripcion**
 `
-- ● El sitio cuenta con:
 - ○ Diferentes vistas de páginas de la organización. Se eligió un instituto de nutrición.
 - ○ Estructura html y css. Se utilizo flexbox.
 - ○ Pie de página con enlace a redes sociales.

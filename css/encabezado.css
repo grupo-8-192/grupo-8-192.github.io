@@ -1,5 +1,5 @@
 .encabezado {
-    background-color: rgb(116, 70, 132);
+    background-color: #8e44ad;
     padding: 5px 40px;
 }
 
@@ -16,7 +16,7 @@
 
 .logo-txt:hover {
     cursor: pointer;
-    color: palevioletred;
+    color: #bdc3c7;
     transition: all 500ms;
 }
 
@@ -94,6 +94,6 @@
     .menu-link:hover {
         transition: 500ms;
         cursor: pointer;
-        color: palevioletred;
+        color: #bdc3c7;
     }
 }

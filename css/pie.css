@@ -1,5 +1,6 @@
 .pie {
-    background-color: rgb(116, 70, 132);
+    background-color: #8e44ad;
+    padding: 1em;
 }
 
 .lista-redes-sociales {
@@ -22,7 +23,8 @@
 .redes-link:hover {
     transition: 500ms;
     cursor: pointer;
-    color: palevioletred;
+    color: #bdc3c7;
+
 }
 
 @media only screen and (min-width: 768px) {
