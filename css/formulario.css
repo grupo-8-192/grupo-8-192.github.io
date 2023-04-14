@@ -25,14 +25,14 @@
     font-weight: 400;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(175, 175, 175);
-    transition: all ease 300ms;
+    transition: all ease 750ms;
     outline: none;
     padding: 15px 10px;
 }
 
 /* focus */
 .formulario input:focus {
-    border: 1px solid palevioletred;
+    border: 1px solid #8e44ad;
     box-shadow: 10px 10px 10px -5 rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 10px -5 rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 10px -5 rgba(0, 0, 0, 0.75);

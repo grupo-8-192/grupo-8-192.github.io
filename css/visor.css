@@ -2,8 +2,7 @@
     width: 360px;
     height: 210px;
     margin: 30px auto;
-    background-color: black;
-    color: chartreuse;
+    color: rgb(25, 25, 25);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -11,6 +10,10 @@
     align-items: center;
     text-align: center;
     padding: 1.2em;
+    border-radius: 5px;
+    background-color: rgb(200, 150, 200);
+    box-shadow: -10px 10px 20px rgb(175, 175, 175),
+        10px -10px 20px #ffffff;
 }
 
 .resultado,
